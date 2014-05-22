@@ -8,6 +8,7 @@
 	};
 
 	$zip = $_GET['zip'];
+	$field = $_GET['field'];
 
 	$result = mysqli_query($con,"SELECT * FROM A_ZipCBSA_2010 WHERE zip = " . $zip);
 
@@ -17,7 +18,12 @@
   					'countyname' => $row['countyname'],
   					'CBSATitle' => $row['CBSATitle'],
   					'CBSACentralCity' => $row['CBSACentralCity']);
-  		echo json_encode($r);
+  		if($field) {
+  			echo $r[$field];
+  		} else {
+  			echo json_encode($r);
+  		}
+  		
 	}
 
 	mysqli_close($con);
