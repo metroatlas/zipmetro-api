@@ -1,4 +1,7 @@
 <?php
+  // CORS header
+  header("Access-Control-Allow-Origin: *");
+
 	// Create connection
 	$con=mysqli_connect("localhost","root","root","metroatlas");
 
