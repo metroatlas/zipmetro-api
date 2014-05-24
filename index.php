@@ -1,6 +1,7 @@
 <?php
-  // CORS header
-  header("Access-Control-Allow-Origin: *");
+ 	// CORS header
+ 	// To allow cross-domain API connections
+ 	header("Access-Control-Allow-Origin: *");
 
 	// Create connection
 	$con=mysqli_connect("localhost","root","root","metroatlas");
