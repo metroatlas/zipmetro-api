@@ -21,7 +21,10 @@
   		$r = array( 'zip' => $row['zip'],
   					'countyname' => $row['countyname'],
   					'CBSATitle' => $row['CBSATitle'],
-  					'CBSACentralCity' => $row['CBSACentralCity']);
+  					'CBSACentralCity' => $row['CBSACentralCity']
+            'StateName' => $row['StateName']
+            'CSATitle' => $row['CSATitle'],
+            'CSACentralCity' => $row['CSACentralCity']);
   		if($field) {
   			echo $r[$field];
   		} else {
