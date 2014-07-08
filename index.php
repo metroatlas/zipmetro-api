@@ -4,7 +4,7 @@
  	header("Access-Control-Allow-Origin: *");
 
 	// Create connection
-	$con=mysqli_connect("localhost","root","root","metroatlas");
+	$con=mysqli_connect("localhost","root","root","zipmetro");
 
   // Check connection
   if (mysqli_connect_errno()) {
@@ -32,6 +32,10 @@
             'PSACode' => $row['PSACode'],
             'PSACentralCity' => $row['PSACentralCity'],);
       if($field) {
+        if ($field = 'allCities') {
+          // Transform the allCities field in a json object
+
+        } else {
           echo $r[$field];
         }
       } else {
