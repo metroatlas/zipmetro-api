@@ -27,9 +27,13 @@
             'StateName' => $row['StateName'],
             'CSATitle' => $row['CSATitle'],
             'CSACode' => $row['CSACode'],
-            'CSACentralCity' => $row['CSACentralCity']);
+            'CSACentralCity' => $row['CSACentralCity'],
+            'PSATitle' => $row['PSATitle'],
+            'PSACode' => $row['PSACode'],
+            'PSACentralCity' => $row['PSACentralCity'],);
       if($field) {
-        echo $r[$field];
+          echo $r[$field];
+        }
       } else {
         echo json_encode($r);
       }
