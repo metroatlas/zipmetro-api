@@ -30,11 +30,12 @@
             'CSACentralCity' => $row['CSACentralCity'],
             'PSATitle' => $row['PSATitle'],
             'PSACode' => $row['PSACode'],
-            'PSACentralCity' => $row['PSACentralCity'],);
+            'PSACentralCity' => $row['PSACentralCity']);
       if($field) {
-        if ($field = 'allCities') {
+        if($field == 'cities') {
           // Transform the allCities field in a json object
-
+          $cities = explode(", ", $row['allCities']);
+          echo json_encode($cities);
         } else {
           echo $r[$field];
         }
