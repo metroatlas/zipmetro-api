@@ -26,14 +26,20 @@
               'countynamefull' => $row['countynamefull'],
               'CBSATitle' => $row['CBSATitle'],
               'CBSACentralCity' => $row['CBSACentralCity'],
+              'CBSACentralCities' => explode(",", $row['CBSACentralCities']),
+              'CBSAStates' => explode(",", $row['CBSAStates']),
               'CBSACode' => $row['CBSACode'],
               'StateName' => $row['StateName'],
               'CSATitle' => $row['CSATitle'],
               'CSACode' => $row['CSACode'],
               'CSACentralCity' => $row['CSACentralCity'],
+              'CSACentralCities' => explode(",", $row['CSACentralCities']),
+              'CSAStates' => explode(",", $row['CSAStates']),
               'PSATitle' => $row['PSATitle'],
               'PSACode' => $row['PSACode'],
               'PSACentralCity' => $row['PSACentralCity'],
+              'PSACentralCities' => explode(",", $row['PSACentralCities']),
+              'PSAStates' => explode(",", $row['PSAStates']),
               'cities' => explode(", ", $row['allCities']));
         if($field) {
           if($field == 'cities') {
