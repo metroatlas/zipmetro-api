@@ -24,6 +24,7 @@
         $r = array( 'zip' => $row['zip'],
               'countyname' => $row['countyname'],
               'countynamefull' => $row['countynamefull'],
+              'countyConsolidated' => $row['countyConsolidated'],
               'CBSATitle' => $row['CBSATitle'],
               'CBSACentralCity' => $row['CBSACentralCity'],
               'CBSACentralCities' => explode(",", $row['CBSACentralCities']),
